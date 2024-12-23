@@ -1,5 +1,6 @@
 package All.Game;
 
+import All.Resources.ImageFields;
 import All.Resources.THEMES;
 import All.Resources.THEMES_ENUM;
 
@@ -93,6 +94,11 @@ public class Main extends JFrame {
 
     }
 
+    public static void main(String[] args) {
+        new Main();
+        System.out.println(ImageFields.B_BISHOP_IMAGE.toString());
+        System.out.println(ImageFields.B_PAWN_IMAGE.getIconHeight());
+    }
     private static void update() {
         ChessBoardArea.updateBoardAppearance();
     }
